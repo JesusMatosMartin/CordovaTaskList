@@ -31,9 +31,9 @@ function addOnClickListeners() {
 function addTask(element = null) {
     let value = inputField[0].value;
     if (element === null && value !== "") {
-        $("ul").append('<li class="hoverEffect">' + value + '<span class="close">x</span></li>')
+        $("ul").append('<li class="hoverEffect">' + value + '<span class="close"> 	x</span></li>')
     } else if (element !== null) {
-        $("ul").append('<li class="hoverEffect">' + element + '<span class="close">x</span></li>')
+        $("ul").append('<li class="hoverEffect">' + element + '<span class="close"> 	x</span></li>')
     }
 
     inputField[0].value = "";
