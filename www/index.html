@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Security-Policy"
+			content="default-src 'unsafe-inline' &apos;self&apos; data: gap: https://ssl.gstatic.com &apos;unsafe-eval&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; media-src *; img-src &apos;self&apos; data: content:;">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+		<meta name="color-scheme" content="light dark">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="js/jquery-1.5.0.mobile.min.css">
+		<title>Task List</title>
+	</head>
+
+	<body>
+		<div data-role="page" id="homePage">
+			<div data-role="header">
+				<button type="button" class="buttonTask" id="buttonTask">Añadir tarea</button>
+				<h1>Task List</h1>
+			</div>
+			<input class="inputTask" id="inputTask" type="text" placeholder="Tarea"/>
+			<ul id="list" data-role="listview">
+				<!-- <li>Comprar pan<span class="close">x</span></li>
+				<li>Comprar tomate<span class="close">x</span></li>
+				<li>Comprar bacon<span class="close">x</span></li>
+				<li>Comprar queso<span class="close">x</span></li> -->
+			</ul>
+
+			<div data-role="footer" data-position="fixed">
+				<h1>Jesús Matos</h1>
+			</div>
+		</div>
+
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script>
+		<script type="text/javascript" id="jqm-trans-disable">
+			$(document).on("mobileinit", function () {
+				$.mobile.defaultPageTransition = "none";
+				$.mobile.defaultDialogTransition = "none";
+			});
+		</script>
+		<script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+
+	</body>
+
+</html>
